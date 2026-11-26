@@ -1,45 +1,58 @@
-![evidence-logo](/readme/evidence-logo.svg)
+<div id="top" align="center">
 
-[![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](https://opensource.org/licenses/MIT)
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="./sites/docs/static/img/wordmark-dark.svg">
+  <img alt="Evidence Logo" src="./sites/docs/static/img/wordmark-light.svg">
+</picture>
 
-**<h2>Business Intelligence for Modern Data Teams</h2>**
+Business Intelligence as Code: Generate reports using SQL and markdown
 
-**[Evidence](https://evidence.dev)** enables analysts to deliver a polished business intelligence system using SQL and markdown. 
+### [Docs](https://docs.evidence.dev) | [Examples](https://evidence.dev/examples) | [Cloud](https://evidence.dev/cloud) | [Slack](https://slack.evidence.dev)
 
-It offers a modern development workflow for analysts and a polished user experience for decision-makers.
+![GitHub Repo stars](https://img.shields.io/github/stars/evidence-dev/evidence?style=social)
+![NPM](https://img.shields.io/npm/l/%40evidence-dev%2Fevidence)
+![npm](https://img.shields.io/npm/v/@evidence-dev/evidence?logo=npm)
+![Release](https://img.shields.io/github/actions/workflow/status/evidence-dev/evidence/release.yml?logo=npm)
+[![Join Slack](https://img.shields.io/badge/slack-join-blue?logo=slack&amp)](https://slack.evidence.dev)
+
+</div>
 
 # How It Works
-An Evidence project is a collection of markdown documents. Whenever you write SQL queries in those documents, Evidence runs that SQL against your data warehouse.
 
-You can reference the results of those queries directly in your markdown document's text, or you can use them to make charts, graphs, and tables using our built-in component library.
+Evidence is an open-source, code-based alternative to drag-and-drop business intelligence tools.
 
-Evidence compiles your markdown documents into a fast and reliable website. It tests your queries and keeps the site up-to-date with your data warehouse.
+![how-it-works](sites/docs/static/img/how-it-works.png)
 
-Evidence supports loops, conditionals, parameterized pages, tests and more. It's easy to get started and you can build data products which are both more sophisticated and dramatically easier to use than what you can build with a typical BI tool.
-![how-it-works](/readme/how-it-works.png)
+Evidence generates a website from markdown files:
 
-# Getting Started 
-Evidence is in alpha. A lot of things will change between now and our stable release.  
+- **SQL statements** inside markdown files run queries against your data sources
+- **Charts and components** are rendered using these query results
+- **Templated pages** generate many pages from a single markdown template
+- **Loops** and **If / Else** statements allow control of what is displayed to users
 
-## Installation 
+# Install
 
-Check out the [documentation](https://readme.evidence.dev) for a complete walk through.
+1. Download the [Evidence VSCode Extension](https://marketplace.visualstudio.com/items?itemName=Evidence.evidence-vscode)
+2. Open the Command Palette (F1) and enter `Evidence: New Evidence Project`
+3. Click the Start Evidence button in the bottom status bar
 
-```
-npm init @evidence-dev/new my-project 
-cd my-project
-npm install
-npm run dev 
-```
+See docs for [other install options](https://docs.evidence.dev/getting-started/install-evidence) (CLI, Docker, etc)
+
+# Publish
+
+- [Evidence Cloud](https://evidence.dev/cloud) is the easiest way to securely host your app. It's free to get started.
+- [Self-hosted](https://docs.evidence.dev/deployment/overview/#self-host) options include Netlify, Vercel, your own infra, and other static site hosting platforms.
 
 # Join the Evidence Community
-Join our [Slack channel](https://evidencedev.slack.com/join/shared_invite/zt-qliah5tz-THIzMChvRn~lBA7EHFPXaA#/shared-invite/email) to get involved in the community's discussion, share what you're working on, or request features.
+
+Join our [Slack channel](https://slack.evidence.dev) to get involved in the community's discussion, share what you're working on, or ask for help.
 
 Follow us on [Twitter](https://twitter.com/evidence_dev) to receive the latest updates on Evidence.
 
+# Contributing
 
-# Contributing 
-If you are interested in contributing, please join us on our [slack channel](https://evidencedev.slack.com/join/shared_invite/zt-qliah5tz-THIzMChvRn~lBA7EHFPXaA#/shared-invite/email), open an [issue](https://github.com/evidence-dev/evidence/issues/new), or contribute a pull request.  
+If you are interested in contributing, please join us on our [slack channel](https://slack.evidence.dev), open an [issue](https://github.com/evidence-dev/evidence/issues/new), or contribute a pull request.
 
 # License
-Evidence is licensed under the MIT license. See the [LICENSE](readme/license.md) file for licensing information.
+
+Evidence is licensed under the MIT license. See the [LICENSE](LICENSE.md) file for licensing information.
